@@ -1,9 +1,18 @@
 h1, h2, h3, h4, p, li{
     font-family: sans-serif;
+
+}
+h1,h2,h3,h4{
+    color: #2ca847;
+}
+.main-header{
+    background-color: rgb(198, 206, 206);
 }
 
+
+
 h1{
-    color:blue;
+    color: #1098ad;
     font-size: 26px;
     text-transform: uppercase;
     font-style: italic;
@@ -50,4 +59,8 @@ footer p{
 }
 ul{
     list-style: none;
+}
+aside{
+    background-color: #f7f7f7;
+    border: 5px solid #1098ad;
 }
