@@ -1,15 +1,39 @@
 
+
+header{
+    background-color: cyan;
+}
+    
+
+
 h1{
     font-style: italic;
+    font-size: 20px;
     text-transform: uppercase;
 }
-body{
-    background-color:chartreuse;
+h2{
+    font: 15px;
+    line-height: 0.5;
+    
 }
-container .left-side{
-    position: relative;
-    background-color:blue;
-    max-width: 1000px;
-    max-height: 100px;
+h4{
+    font-size: 20px;
+}
+td{
+    text-align: center;
+}
+h5{
+    line-height: 0.5;
+    font-size: 20px;
+}
+aside{
+    border: 3px solid black;
+    border-width: 70%;
+}
+     
+    
 
-}
+
+    
+
+    
