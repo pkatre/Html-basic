@@ -1,0 +1,15 @@
+
+h1{
+    font-style: italic;
+    text-transform: uppercase;
+}
+body{
+    background-color:chartreuse;
+}
+container .left-side{
+    position: relative;
+    background-color:blue;
+    max-width: 1000px;
+    max-height: 100px;
+
+}
