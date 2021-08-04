@@ -1,6 +1,12 @@
 h1, h2, h3, h4, p, li{
     font-family: sans-serif;
+    color:black;
 
+}
+/*inheritance*/
+body{
+    color:darkred;
+    border-top:10px solid blue;/*border on top*/
 }
 h1,h2,h3,h4{
     color: #2ca847;
@@ -64,3 +70,69 @@ aside{
     background-color: #f7f7f7;
     border: 5px solid #1098ad;
 }
+/*.first-li{
+    font-weight:bold;
+}*/
+/*li:first-child{
+    font-weight: bold;
+}*/
+/*li:last-child{
+    font-style: italic;
+}*/
+/*li:nth-child(odd){
+    color:crimson;
+}*/
+
+/* misconception: this won,t work*/
+article p:first-child{
+    color:red;
+}
+/*styling link*/
+a:link{
+    color:brown;
+    text-decoration: none;
+}
+a:visited{
+    color:coral;
+}
+a:hover{
+    color:orange;
+    font-weight: bold;
+    text-decoration: underline dotted orchid;
+}
+a:active{
+    background-color: black;
+    font-style:italic;
+}
+a{
+    color:darkgreen;
+}
+
+/*resolving conflicts between selector*/
+
+#copyright{
+    color:blue;
+}
+.copyright{
+    color:cyan;
+}
+.text{
+    color:yellow
+}
+footer{
+    color:green !important;
+}
+/* inheritance for nav element.in nav element link and para is present below class work differently for link and para
+ so we use- nav p here to work same on link and para.*/
+
+  /*nav a:link,
+   nav p{
+     font-size: 20px;;  
+   }*/
+   /*OR*/
+    nav{
+        font-size: 18px;
+    }
+    
+
+
