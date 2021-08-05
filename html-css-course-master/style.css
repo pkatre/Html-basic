@@ -3,17 +3,41 @@ h1, h2, h3, h4, p, li{
     color:black;
 
 }
+ /*  *{
+    margin:0px;
+    padding:0; to remove spaces from text
+   }*/
 /*inheritance*/
 body{
     color:darkred;
     border-top:10px solid blue;/*border on top*/
+    position: relative;
+
+
 }
+.container{       /*centering the page*/
+    width: 700px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 0;
+    position:relative;
+} 
+   
 h1,h2,h3,h4{
     color: #2ca847;
 }
 .main-header{
     background-color: rgb(198, 206, 206);
+    padding:20px 40px;
+   /* padding-left: 40px;*/
+   /* padding-right: 40px;*/
+   margin-bottom: 60px;
+   height:80px;   
 }
+.post-header{
+    margin-bottom: 50px; /*this will create space after the HTMLimage*/
+}
+
 
 
 
@@ -47,6 +71,15 @@ h5{
 p{
     font-size: 22px;
      line-height: 1.5;
+     
+}
+li{
+    font-size: 20px;
+    margin-bottom: 10px;
+  /*  display: inline;     convert block element into inline element*/
+}
+li:last-child{
+    margin-bottom:0;
 }
 
 footer p{
@@ -69,6 +102,10 @@ ul{
 aside{
     background-color: #f7f7f7;
     border: 5px solid #1098ad;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    padding:50px 0;
+    width:500px;
 }
 /*.first-li{
     font-weight:bold;
@@ -107,6 +144,17 @@ a:active{
 a{
     color:darkgreen;
 }
+  /*  nav a:link{   /*background color for navigation: orange*/
+   /* background-color: orangered; */
+   /* margin:20px;   */
+   /* padding:20px;*/
+    /*display: block;     convert inline element into block*/
+   /* margin-right: 30px;
+    margin-top: 10px;
+   /* display: inline-block;  /* inline box work like block level boxes.this is converted to inline block level.
+    }   */
+     
+        
 
 /*resolving conflicts between selector*/
 
@@ -130,9 +178,22 @@ footer{
      font-size: 20px;;  
    }*/
    /*OR*/
-    nav{
+nav{
         font-size: 18px;
-    }
+}
+.post-img{
+    width:100%;
+}
+button{
+    font-size: 22px;
+    padding:20px;
+    cursor: pointer;
+    position:absolute;
+    /*top: 50px;
+    left:50px;*/
+    bottom:50px;
+    right:50px;
+}
     
 
 
