@@ -1,0 +1,36 @@
+body{
+   background: url('image/gym\ image\ light.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 1100px;
+   background-color:peachpuff;
+}
+
+.signup{
+    text-align: center;
+    color:white;
+    padding: 60px;
+    margin: 5%;
+    width: 350px;
+    font-size:30px;
+    position:absolute;
+    right:100px;
+    top:0;
+    background-color:salmon;
+}
+.log-in{
+    text-align: center;  
+    color:black;
+    padding: 30px;
+    margin: 3%;  
+    width: 350px;
+    font-size: 30px;
+    background-color:white;
+    position: absolute;
+    right: 150px;
+    bottom:0;
+}
+.submit-button{
+    background-color: salmon;
+    margin: 5%;
+}

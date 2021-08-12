@@ -1,0 +1,62 @@
+body{
+     background: url('image/gym\ image\ light.jpg');  
+     
+    background-repeat: no-repeat;
+    
+    background-size: auto;
+     height: 400px;  /* You must set a specified height */
+    background-position: center;/* Center the image */
+     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header{
+    position: relative;
+}
+.left{
+    
+    display:inline-block;
+   /* border:2px solid red; */
+    position:absolute;
+    left:30px;
+    top:20px;
+    width: 200px;
+    height: 50px;
+}
+.mid{
+  /*  background-color:teal;  */
+    margin-top: 20px;
+    width: 500px;
+    margin: 20px;
+    margin-right: 30%;
+    height: 20px;
+    float: right;
+}
+.navigation{
+    padding: 10px;
+    font-weight: bolder;
+    color:white;
+}
+.right{
+   /* background-color: teal;  */
+    font-weight: bolder;
+    position:absolute;
+    right:34px;
+    top:20px;
+    width: 200px;
+    height: 20px;
+    display: inline-block;
+}
+a{
+    color: white;
+    font-weight: bolder;
+}
+h1{
+    position: absolute;
+    left:500px;
+    top:200px;
+    font-size: 50px;
+    color:black;
+    font-weight: bolder;
+    
+
+}
