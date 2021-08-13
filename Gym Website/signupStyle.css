@@ -33,4 +33,5 @@ body{
 .submit-button{
     background-color: salmon;
     margin: 5%;
+    width: 150px;
 }
