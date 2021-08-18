@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(image/bg3.jpeg) no-repeat;
+    background-size: cover;
+}
+
+img{
+    text-align: center;
+    height: 50px;
+}
+.box{
+    position: relative;
+    color:white;
+    width:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    border:1px solid black;
+    padding-top: 20px;
+    border-radius: 10px;
+    
+}
+h1{
+    text-align: center;
+}
+.user{
+    border-radius: 25px;
+     position: absolute;
+    left:170px;
+    bottom: 310px;
+}
+.inputBox{
+    position: relative;
+    padding: 15px;
+    
+}
+
+.inputBox input{
+    
+    text-align:start;
+    width:100%;
+    padding:0 0px;
+    height: 30px;
+    font-size: 13px;
+    color:white;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    
+}
+.box .inputBox label{
+   position: absolute;
+    top:0;
+    left:5px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border:none;
+}
+.inputBox input:focus~ label,
+.inputBox input:valid~label{
+    top:-15px;
+    color: black;
+}
+.pass{
+    margin:5px 0 20px 15px;
+    cursor:pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+    color: black;
+}
+input[type="submit"]{
+    color:black;
+    font-size: 16px;
+    margin-left: 20px ;
+    margin-right: 20px;
+    padding-left: 20px ;
+    width: 350px;
+    height: 30px;
+    background:rgb(211, 240, 237);
+    border:1px solid black;
+    border-radius: 20px;
+}
+input[type="submit"]:hover{
+    transition: 2s;
+    border-color: white;
+}
+.sign-up{
+    margin: 30px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.sign-up a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+    
+
+  
+    
