@@ -1,0 +1,45 @@
+body{
+    background-image: url('image/bg1.jpg');
+    background-size: cover;
+}
+
+.container{
+    text-align: left;
+    padding-left: 100px;
+    
+}
+.container h1{
+    text-align: justify;
+    padding-left: 80px;
+    font-size: 50px;
+}
+.calculator{
+    display: inline-block;
+    border-radius: 9px;
+    border:2px solid black;
+    padding: 20px;
+    background: gray;
+    height: 300px;
+}
+table{
+    margin: auto;
+    
+}
+input{
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 8px;
+}
+button{
+    font-size: 20px;
+    background:rgb(206, 204, 204);
+    width: 76px;
+    height: 40px;
+    border-radius: 8px;
+}
+button:hover{
+    background:linear-gradient(27deg, rgb(124, 123, 123) 50%,rgb(105, 104, 104) 50%);
+    
+}
