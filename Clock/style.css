@@ -1,0 +1,47 @@
+body{
+    background-image: url('image/man\ running.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#clock{
+    position: relative;
+    margin: auto; /*to center the image*/
+    background-image: url('image/clock5.png');
+    color: black;
+    height: 330px;
+    width: 330px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    border-radius: 300px;
+}
+#hour, #minute, #second{
+    position: absolute;
+    background:black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    width:1.5%;
+    height: 25%;
+    top:25%;
+    left:49.3%;
+    opacity: 0.8;
+
+}
+#minute{
+    width:1.3%;
+    height: 30%;
+    top:20%;
+    left:49.3%;
+    opacity: 0.8;
+    
+}
+#second{
+    width:1%;
+    height: 35%;
+    top:15%;
+    left:49.3%;
+    opacity: 0.8;
+    
+}
