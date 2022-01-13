@@ -2,12 +2,26 @@ console.log("hello");
 const container = document.getElementById("container");
 const input = document.querySelector(".inputText");
 const addtext = document.querySelector(".add_button");
+const date = document.querySelector(".date");
 
+setInterval(function () {
+  const now = new Date();
+  const day = now.getDay();
+  const date1 = now.getDate();
+  const month = now.getMonth() + 1;
+  const year = now.getFullYear();
+  const hour = String(now.getHours()).padStart(2, "0");
+  const min = String(now.getMinutes()).padStart(2, "0");
+  const sec = String(now.getSeconds()).padStart(2, "0");
+  date.innerHTML = `Date:${date1}/${month}/${year}, ${hour}:${min}`;
+}, 1000);
+var ul;
+var removeAlldiv;
 addtext.addEventListener("click", function () {
   console.log("hello");
   //create element
   if (input.value.trim()) {
-    const ul = document.createElement("ul");
+    ul = document.createElement("ul");
     ul.classList.add("to-doBox");
     //console.log(ul);
 
@@ -15,10 +29,11 @@ addtext.addEventListener("click", function () {
     todolist.classList.add("todolist");
     //console.log(todolist);
 
-    //li element gto get input value
+    //li element get input value
     const li = document.createElement("li");
     li.innerHTML = input.value;
     li.classList.add("todo-text");
+
     //console.log(li);
 
     //button div
@@ -37,13 +52,12 @@ addtext.addEventListener("click", function () {
     editButton.innerHTML = "Edit";
 
     //append element
+
     ul.appendChild(todolist);
     todolist.appendChild(li);
     todolist.appendChild(buttonDiv);
     buttonDiv.appendChild(buttonRemove);
     buttonDiv.appendChild(editButton);
-
-    console.log(ul);
 
     //append all the element into main div
     container.appendChild(ul);
@@ -51,7 +65,12 @@ addtext.addEventListener("click", function () {
 
     //edit button work
     editButton.addEventListener("click", function () {
-      li.innerText = parentNode.insertBefore(newNode, referenceNode);
+      console.log("click");
+
+      input.value = li.innerHTML;
+      todolist.remove("todolist");
+      li.innerHTML = input.value;
+      li.classList.add("todo-text");
     });
 
     //remove button work
@@ -59,8 +78,26 @@ addtext.addEventListener("click", function () {
       todolist.remove("todolist");
     });
 
+    //removeallButton.classList.add("removeAll-button");
+
     //when the add button click it clear the input text
     input.value = "";
   }
+
   //remove button work
+  container.appendChild(removeAlldiv);
+});
+
+//Remove all button
+removeAlldiv = document.createElement("div");
+removeAlldiv.classList.add("removeall_Button");
+const removeallButton = document.createElement("button");
+removeallButton.classList.add("removeAll-button");
+removeallButton.innerHTML = "RemoveAll";
+
+console.log(removeallButton);
+
+removeAlldiv.appendChild(removeallButton);
+removeAlldiv.addEventListener("click", function () {
+  ul.remove();
 });
